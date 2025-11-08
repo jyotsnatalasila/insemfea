@@ -1,7 +1,10 @@
-const config = 
-{
-    "url": "http://localhost:8086"
-    // "https://sdpbackend-famf.onrender.com"
-}
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-export default config
+export default defineConfig({
+  plugins: [react()],
+  base: '/',        // ensure correct root path
+  build: {
+    outDir: 'dist',
+  }
+})

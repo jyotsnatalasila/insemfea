@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import AdminNavBar from "./admin/AdminNavBar";
 import SellerNavBar from './seller/SellerNavBar';
 import BuyerNavBar from "./buyer/BuyerNavBar";
@@ -12,7 +12,7 @@ function AppContent() {
   const { isAdminLoggedIn, isBuyerLoggedIn, isSellerLoggedIn } = useAuth();
 
   return (
-    <BrowserRouter>
+    <HashRouter>
      
       <ToastContainer position="top-right" autoClose={3000} theme="light" />
 
@@ -25,7 +25,7 @@ function AppContent() {
       ) : (
         <Layout />
       )}
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
