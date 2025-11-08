@@ -5,7 +5,6 @@ import SellerProfile from './SellerProfile';
 import SellerLogin from './SellerLogin';
 import AddProduct from './AddProduct';
 import { useAuth } from '../contextapi/AuthContext';
-import ViewProductsBySeller from './ViewProductsBySeller';
 import UpdateProduct from './UpdateProduct';
 import SForgotPassword from "./SForgotPassword";
 import SResetPassword from "./SResetPassword";
